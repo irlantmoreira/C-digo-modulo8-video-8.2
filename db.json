@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Ir ao trabalho",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Estudar",
+      "completed": true
+    }
+  ]
+}

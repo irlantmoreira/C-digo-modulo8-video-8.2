@@ -1,0 +1,24 @@
+<h1>todo-list</h1>
+
+<div style="margin-bottom: 1rem;">
+    <button (click)="createTask('Teste')">New task</button>
+    <button (click)="editTask(2,{title:'teste de atualização'})">update</button>
+    <button (click)="getTask(2)">get</button>
+    <button (click)="removeTask(5)">Delete</button>
+
+</div>
+
+<div class="container">
+    @for(task of tasks; track task.id){
+    <app-todo-item [taskTitle]="task.title" />
+
+    }
+</div>
+
+<p>
+    {{task$.pipe()| async | json}}
+</p>
+
+<p>
+    {{message}}
+</p>

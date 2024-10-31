@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  max-width: 800px;
+
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+}
